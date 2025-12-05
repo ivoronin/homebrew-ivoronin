@@ -14,35 +14,35 @@ cask "ec2ssh" do
   on_macos do
     on_intel do
       url "https://github.com/ivoronin/ec2ssh/releases/download/#{version}/ec2ssh_Darwin_x86_64.tar.gz"
-      sha256 "8c1179df0801df797c629cb62e2d73d6fd9a8c35626f72be7e3c45db609bc9ad"
+      sha256 "cfcba0fec54efb6149fff31025d9636b81db0afde4efee838bce5bff79dac2c5"
     end
     on_arm do
       url "https://github.com/ivoronin/ec2ssh/releases/download/#{version}/ec2ssh_Darwin_arm64.tar.gz"
-      sha256 "4cd39a661de55737c1f49b515d910973eae6138a12241e95059865fa4755e45c"
+      sha256 "a3a04b4e05695a3026770239ecadae7d49db20809a1fedecd60c0fa6cc6684d5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ivoronin/ec2ssh/releases/download/#{version}/ec2ssh_Linux_x86_64.tar.gz"
-      sha256 "4cec36c7786f83c98bfbabbfb3320bb8c06be5b98024f9bb7ae82636caec71b6"
+      sha256 "e1c07d0877ea81e9cd8be6813c5616a4507d14dada548b614e62295a72763c22"
     end
     on_arm do
       url "https://github.com/ivoronin/ec2ssh/releases/download/#{version}/ec2ssh_Linux_arm64.tar.gz"
-      sha256 "9fe301a5fade83f01c3eeff003739adb7d599ea0d9c662f0cc27e7ed844b45f5"
+      sha256 "11725358653ca3f1c0634def773680988ce403942b6d6a9be62a01302b142598"
     end
   end
 
   postflight do
-    ln -sf "#{HOMEBREW_PREFIX}/bin/ec2ssh" "#{HOMEBREW_PREFIX}/bin/ec2scp"
-    ln -sf "#{HOMEBREW_PREFIX}/bin/ec2ssh" "#{HOMEBREW_PREFIX}/bin/ec2sftp"
-    ln -sf "#{HOMEBREW_PREFIX}/bin/ec2ssh" "#{HOMEBREW_PREFIX}/bin/ec2list"
+    system_command "ln", args: ["-sf", "#{HOMEBREW_PREFIX}/bin/ec2ssh", "#{HOMEBREW_PREFIX}/bin/ec2scp"]
+    system_command "ln", args: ["-sf", "#{HOMEBREW_PREFIX}/bin/ec2ssh", "#{HOMEBREW_PREFIX}/bin/ec2sftp"]
+    system_command "ln", args: ["-sf", "#{HOMEBREW_PREFIX}/bin/ec2ssh", "#{HOMEBREW_PREFIX}/bin/ec2list"]
   end
 
   uninstall_postflight do
-    rm -f "#{HOMEBREW_PREFIX}/bin/ec2scp"
-    rm -f "#{HOMEBREW_PREFIX}/bin/ec2sftp"
-    rm -f "#{HOMEBREW_PREFIX}/bin/ec2list"
+    system_command "rm", args: ["-f", "#{HOMEBREW_PREFIX}/bin/ec2scp"]
+    system_command "rm", args: ["-f", "#{HOMEBREW_PREFIX}/bin/ec2sftp"]
+    system_command "rm", args: ["-f", "#{HOMEBREW_PREFIX}/bin/ec2list"]
   end
 
   # No zap stanza required
