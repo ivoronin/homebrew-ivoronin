@@ -9,7 +9,7 @@ class Ec2ssh < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/ec2ssh"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=#{version}"), "./cmd/ec2ssh"
 
     bin.install_symlink "ec2ssh" => "ec2scp"
     bin.install_symlink "ec2ssh" => "ec2sftp"
