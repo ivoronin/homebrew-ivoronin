@@ -14,6 +14,7 @@ class Ec2ssh < Formula
     bin.install_symlink "ec2ssh" => "ec2scp"
     bin.install_symlink "ec2ssh" => "ec2sftp"
     bin.install_symlink "ec2ssh" => "ec2list"
+    bin.install_symlink "ec2ssh" => "ec2ssm"
   end
 
   test do
