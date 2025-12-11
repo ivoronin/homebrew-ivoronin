@@ -1,8 +1,8 @@
 class Ec2ssh < Formula
   desc "Simplify SSH connections to AWS EC2 instances"
   homepage "https://github.com/ivoronin/ec2ssh"
-  url "https://github.com/ivoronin/ec2ssh/archive/refs/tags/2025.12.09.tar.gz"
-  sha256 "d87eedf9dc792a4dcf110872ed10b3cd8a4fea90f1f1573414c4260c0bd9bc20"
+  url "https://github.com/ivoronin/ec2ssh/archive/refs/tags/2025.12.11.tar.gz"
+  sha256 "1245621198a82ebc6b47df079cecb44ab3f6cad58b17dc59ede16dabbca9df4e"
   license "GPL-3.0-only"
   head "https://github.com/ivoronin/ec2ssh.git", branch: "main"
 
