@@ -1,8 +1,8 @@
 class Amzcurl < Formula
   desc "Minimal curl wrapper with AWS SigV4 authentication"
   homepage "https://github.com/ivoronin/amzcurl"
-  url "https://github.com/ivoronin/amzcurl/archive/refs/tags/2025.05.07.tar.gz"
-  sha256 "1141ed5a2e95cf41822d07b3aa2c33130dd59b36129d4b115f15a927143de87d"
+  url "https://github.com/ivoronin/amzcurl/archive/refs/tags/v2026.01.09.tar.gz"
+  sha256 "e184fd7f14382c928868ea64aac9348ec86c2a38fc0c066d7b55a07dddbf0d91"
   license :cannot_represent
   head "https://github.com/ivoronin/amzcurl.git", branch: "main"
 
