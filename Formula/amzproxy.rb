@@ -1,8 +1,8 @@
 class Amzproxy < Formula
   desc "Lightweight HTTP proxy that signs requests using AWS SigV4"
   homepage "https://github.com/ivoronin/amzproxy"
-  url "https://github.com/ivoronin/amzproxy/archive/refs/tags/v2025.05.12.tar.gz"
-  sha256 "e8203b42e034a54ec89cc6ff25a9d3fba8a1bb4c96bed747b6e8d3b28f359d8c"
+  url "https://github.com/ivoronin/amzproxy/archive/refs/tags/v2026.01.09.tar.gz"
+  sha256 "f41a2e332e653f4fd751ea974e8feecb5401023d972118a58d7952ce89689dfe"
   license "GPL-3.0"
   head "https://github.com/ivoronin/amzproxy.git", branch: "main"
 
