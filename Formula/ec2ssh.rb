@@ -18,6 +18,6 @@ class Ec2ssh < Formula
   end
 
   test do
-    assert_match "ec2ssh", shell_output("#{bin}/ec2ssh --help 2>&1", 2)
+    assert_match version.to_s, shell_output("#{bin}/ec2ssh --version")
   end
 end
