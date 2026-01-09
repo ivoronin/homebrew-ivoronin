@@ -1,8 +1,8 @@
 class Awsctx < Formula
   desc "Tool to manage AWS SDK configuration profiles inspired by kubectx"
   homepage "https://github.com/ivoronin/awsctx"
-  url "https://github.com/ivoronin/awsctx/archive/refs/tags/v2025.01.09.tar.gz"
-  sha256 "7ed033eb939184856c738247cd87dd911558cc46c8ce1b1d5c02ce88bee34f55"
+  url "https://github.com/ivoronin/awsctx/archive/refs/tags/v2026.01.09.tar.gz"
+  sha256 "127eb95b2b520481e6c06ca7298c9b641126043af09bc6eb808225a5183219b5"
   license "GPL-3.0"
   head "https://github.com/ivoronin/awsctx.git", branch: "main"
 
