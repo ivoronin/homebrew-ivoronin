@@ -1,8 +1,8 @@
 class Zrw < Formula
   desc "Run commands in Zellij panes and wait for exit code"
   homepage "https://github.com/ivoronin/zrw"
-  url "https://github.com/ivoronin/zrw/archive/refs/tags/v0.0.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  url "https://github.com/ivoronin/zrw/archive/refs/tags/v2026.01.20.tar.gz"
+  sha256 "c16ee16cd79cccf290a7d8e132f11b5f2af9620d1f2b13b0e9cd41c90bee9243"
   license "GPL-3.0"
   head "https://github.com/ivoronin/zrw.git", branch: "main"
 
