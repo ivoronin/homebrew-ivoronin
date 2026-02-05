@@ -1,8 +1,8 @@
 class Clibana < Formula
   desc "CLI tool for OpenSearch with Kibana-like log searching and live tailing"
   homepage "https://github.com/ivoronin/clibana"
-  url "https://github.com/ivoronin/clibana/archive/refs/tags/v2026.01.09.tar.gz"
-  sha256 "4caaddb6951af54e7970a096cb7e365adf49998146c9e58cdba14f9f0e139dc1"
+  url "https://github.com/ivoronin/clibana/archive/refs/tags/v2026.02.05.tar.gz"
+  sha256 "06324edac4699a19eb28353f33671fc16f60add64a93a85bf171cd120d319b14"
   license "GPL-3.0"
   head "https://github.com/ivoronin/clibana.git", branch: "main"
 
