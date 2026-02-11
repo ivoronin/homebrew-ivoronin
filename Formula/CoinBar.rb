@@ -14,6 +14,16 @@ class Coinbar < Formula
     prefix.install "CoinBar.app"
   end
 
+  def caveats
+    <<~EOS
+      CoinBar.app was installed to:
+        #{prefix}/CoinBar.app
+
+      To link it to /Applications:
+        ln -sf #{prefix}/CoinBar.app /Applications/CoinBar.app
+    EOS
+  end
+
   test do
     assert_predicate prefix/"CoinBar.app/Contents/MacOS/CoinBar", :executable?
   end
