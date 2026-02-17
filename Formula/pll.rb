@@ -1,8 +1,8 @@
 class Pll < Formula
   desc "Run shell commands in parallel with output buffering and resumable checkpoints"
   homepage "https://github.com/ivoronin/pll"
-  url "https://github.com/ivoronin/pll/archive/refs/tags/v0.0.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  url "https://github.com/ivoronin/pll/archive/refs/tags/v2026.02.17.tar.gz"
+  sha256 "0cbd314a409bd991845976afa952c58c5b25ceb4bb0f7f48d763026ae68ac90d"
   license "GPL-3.0"
   head "https://github.com/ivoronin/pll.git", branch: "master"
 
