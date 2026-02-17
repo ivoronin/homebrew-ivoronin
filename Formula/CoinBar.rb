@@ -1,8 +1,8 @@
 class Coinbar < Formula
   desc "Track cryptocurrency prices from the macOS menu bar"
   homepage "https://github.com/ivoronin/CoinBar"
-  url "https://github.com/ivoronin/CoinBar/archive/refs/tags/2026.02.11.tar.gz"
-  sha256 "beab9c440341ffa0804e45c61cee9730b567d118ad5e4d9ee6cad15a939eca97"
+  url "https://github.com/ivoronin/CoinBar/archive/refs/tags/2026.02.17.tar.gz"
+  sha256 "cfaf57da2357bb48117fb15d6af325214128a576db56771ecdf502b225fb2836"
   license "GPL-3.0-only"
   head "https://github.com/ivoronin/CoinBar.git", branch: "main"
 
