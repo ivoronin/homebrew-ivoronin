@@ -1,8 +1,8 @@
 class Dupedog < Formula
   desc "High-performance duplicate file finder and deduplicator"
   homepage "https://github.com/ivoronin/dupedog"
-  url "https://github.com/ivoronin/dupedog/archive/refs/tags/v2026.01.08.tar.gz"
-  sha256 "6c7b7941850609840f803dbd94548f0950cd2f93a71a85ec1fbaa836e647f3de"
+  url "https://github.com/ivoronin/dupedog/archive/refs/tags/v2026.03.08.tar.gz"
+  sha256 "1ac1dfd9a6acb12e30cac3b8819acfde94c1e07e148c8f79df26e0f5dd78ac23"
   license "MIT"
   head "https://github.com/ivoronin/dupedog.git", branch: "main"
 
