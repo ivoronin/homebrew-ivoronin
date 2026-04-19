@@ -1,8 +1,8 @@
 class Certvet < Formula
   desc "Pre-flight checks for SSL/TLS certificates against real platform trust stores"
   homepage "https://github.com/ivoronin/certvet"
-  url "https://github.com/ivoronin/certvet/archive/refs/tags/v2026.02.22.tar.gz"
-  sha256 "d471569f327001709c1ffa10141a890463f736243da8872cae3539adb87b4774"
+  url "https://github.com/ivoronin/certvet/archive/refs/tags/v2026.04.19.tar.gz"
+  sha256 "ce76c0734f0242f08915c60659ea451f479c009f47b240ad6f21fd9df3665c3b"
   license "Elastic-2.0"
   head "https://github.com/ivoronin/certvet.git", branch: "main"
 
