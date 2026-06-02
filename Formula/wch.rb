@@ -1,8 +1,8 @@
 class Wch < Formula
   desc "Yet another watch(1) clone"
   homepage "https://github.com/ivoronin/wch"
-  url "https://github.com/ivoronin/wch/archive/refs/tags/v2026.04.03.tar.gz"
-  sha256 "01c4332944a127bb58fb062a344730e3db3fb9f8f4087600718f6c2473a0becd"
+  url "https://github.com/ivoronin/wch/archive/refs/tags/v2026.06.02.tar.gz"
+  sha256 "9293810306408c294a4eff491e54f943f88a61569682830006c1e5cd70b4906c"
   license "GPL-3.0"
   head "https://github.com/ivoronin/wch.git", branch: "main"
 
