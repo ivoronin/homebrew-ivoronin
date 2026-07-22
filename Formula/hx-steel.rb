@@ -1,24 +1,35 @@
 class HxSteel < Formula
   desc "Helix editor with Steel as a plugin language"
   homepage "https://github.com/mattwparas/helix/blob/steel-event-system/STEEL.md"
-  url "https://github.com/mattwparas/helix/archive/0522d519fd5227f77ecef387a87e51b732907562.tar.gz"
-  version "25.7.1-steel-20260622"
-  sha256 "621d2c4d60cb6e94a56971df2f5d1375937c2744eb0509b9cebc617454113ea1"
   license all_of: [
     "MPL-2.0",
     { any_of: ["Apache-2.0", "MIT"] },
   ]
+
+  stable do
+    url "https://github.com/mattwparas/helix/archive/0522d519fd5227f77ecef387a87e51b732907562.tar.gz"
+    version "25.7.1-steel-20260622"
+    sha256 "621d2c4d60cb6e94a56971df2f5d1375937c2744eb0509b9cebc617454113ea1"
+
+    resource "steel" do
+      url "https://github.com/mattwparas/steel/archive/dec633b908afeafeaf62bab457a92e2bf873745a.tar.gz"
+      sha256 "5559f4529b1a49dded6fda63240b163ca6e197154d3849948eb0f88a690afa12"
+    end
+  end
+
+  head do
+    url "https://github.com/mattwparas/helix.git", branch: "steel-event-system"
+
+    resource "steel" do
+      url "https://github.com/mattwparas/steel.git", branch: "master"
+    end
+  end
 
   depends_on "rust" => :build
 
   conflicts_with "evil-helix", because: "both install `hx` binaries"
   conflicts_with "helix", because: "both install `hx` binaries"
   conflicts_with "hex", because: "both install `hx` binaries"
-
-  resource "steel" do
-    url "https://github.com/mattwparas/steel/archive/dec633b908afeafeaf62bab457a92e2bf873745a.tar.gz"
-    sha256 "5559f4529b1a49dded6fda63240b163ca6e197154d3849948eb0f88a690afa12"
-  end
 
   def install
     resource("steel").stage do
