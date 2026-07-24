@@ -1,4 +1,4 @@
-class HxSteel < Formula
+class HelixSteel < Formula
   desc "Helix editor with Steel as a plugin language"
   homepage "https://github.com/mattwparas/helix/blob/steel-event-system/STEEL.md"
   license all_of: [
