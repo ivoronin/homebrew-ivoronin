@@ -34,6 +34,10 @@ class HelixSteel < Formula
   conflicts_with "hex", because: "both install `hx` binaries"
 
   def install
+    ENV["CARGO_BUILD_JOBS"] = "2"
+    ENV["CARGO_PROFILE_RELEASE_DEBUG"] = "0"
+    ENV["CARGO_PROFILE_RELEASE_LTO"] = "thin"
+
     resource("steel").stage do
       # Build the workspace packages together so Cargo only compiles the shared Steel runtime once.
       system "cargo", "build", "--release", "--locked", "--lib", "--bins",
