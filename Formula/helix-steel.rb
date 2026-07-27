@@ -25,7 +25,9 @@ class HelixSteel < Formula
     end
   end
 
+  depends_on "pkgconf" => :build
   depends_on "rust" => :build
+  depends_on "openssl@3"
 
   conflicts_with "evil-helix", because: "both install `hx` binaries"
   conflicts_with "helix", because: "both install `hx` binaries"
